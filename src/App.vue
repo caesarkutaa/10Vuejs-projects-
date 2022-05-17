@@ -1,62 +1,23 @@
 <template>
-<div class="w-full flex">
-    <div class="m-auto">
-    
-  <h1>Available heros: {{heroscount }}</h1>
-  
-  <ul>
-    <li v-for="(hero,index) in dcheros " :key="index">
-    
-    <div>{{ hero.name }} <button @click="remove(index)">x</button></div>
-    </li>  
-  </ul>
-  <form @submit.prevent="addheros">
-  <input  v-model ="newhero" placeholder="Type hero name here"/>  
- <button type="submit">Add Hero</button>
-</form>
+<div class="m-auto">
+ <h1 class="text-2xl my-2">Vue calender</h1>
+<section class="flex"> 
+    <p v-for="day in days" :key="day">{{ day }}</p>   
+    </section>
 </div>
-</div>
-</template>
 
+ </template>
 
-
-<script>   
-export default {  
-    computed:{
-        heroscount(){
-            return this.dcheros.length;
-        },
-       
-    }, 
-   
-
-    methods:{
-        addheros(){
-            if(this.newhero !==""){
-            this.dcheros.push( {name: this.newhero }); this.newhero = '';
-            }
-            
-        },      
-         remove(index){
-      this.dcheros = this.dcheros.filter((hero,i) => i != index)
-
-
-    },
-    },
+<script>
+export default { 
     data(){
         return{
-          
-            newhero:"", 
-            dcheros:[
-             
-            ]
-
+            days:[
+                "Sun","Mon","Tue","Wed","Thu", "Fri","Sat"],
         }
-        
+                
     }
 
-    
- 
 }
 </script>
 
