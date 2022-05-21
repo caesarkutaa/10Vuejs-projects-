@@ -1,8 +1,11 @@
 <template>
-<section> <h1></h1>
-
-
-
+<section> 
+    <div class="flex">
+        <div class="m-auto">
+          <h1>Vue Login</h1>
+        </div>
+    </div>
+    
 
 </section>
   
@@ -12,7 +15,7 @@
 
 <script>
 export default {
-    data
+
 
 }
 </script>
