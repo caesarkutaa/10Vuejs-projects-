@@ -2,7 +2,7 @@
 <section> 
     <div class="flex">
         <div class="m-auto">
-          <h1 class="text-center">Vue Login</h1>
+          <h1>Vue Login</h1>
         </div>
     </div>
     
