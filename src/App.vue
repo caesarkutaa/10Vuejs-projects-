@@ -1,10 +1,15 @@
 <template>
+<div class="m-auto">
+  <div class="flex">
+  <h1 class="2xl text-center">Count down </h1>
   <p>
       {{ days }} days,
     {{ hours }} hours, {{ minutes }} minute, {{ seconds }} seconds
     
     
   </p>
+  </div>
+  </div>
 </template>
 
 <script>
